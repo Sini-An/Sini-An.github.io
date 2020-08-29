@@ -66,53 +66,53 @@
 								<p><b>Step 2:</b><br>
 									Open Anaconda Jupyter Notebook and create a new project(Example-:Project Name:IMDB)<br>
 									If you are new to Jupyter Notebook and you have installed Anaconda previously in your system than these are the simple steps to open a Notebook.<br>
-									<a href="#" class="image main"><img src="images/2.png" alt="" /></a>
+									<a href="#" ><img src="images/2.png" alt="" /></a>
 									Once you execute the command you will see that the kernels gets activated and you will find the following description in the output<br>
-									<a href="#" class="image main"><img src="images/3.png" alt="" /></a><br>
+									<a href="#" ><img src="images/3.png" alt="" /></a><br>
 									Copy and paste the URL in your browser.
 									Include the following statement into code cell
 									<br>
 									Here, bs4 is beautifulSoup4 which is used for pulling HTML and XML files which contains data.<br>
 									Now let's import libraries<br>
-									<a href="#" class="image main"><img src="images/4.png" alt="" /></a>									
+									<a href="#" ><img src="images/4.png" alt="" /></a>									
 									Select a webpage from where you want to pull the data. Take any open source webpage. I am using imdb webpage.<br>									
-									<a href="#" class="image main"><img src="images/5.png" alt="" /></a>					
+									<a href="#" ><img src="images/5.png" alt="" /></a>					
 									Store the web response in parser_html. This is a python library use to parse in a linear or nested structure.<br>
-									<a href="#" class="image main"><img src="images/6.png" alt="" /></a>
+									<a href="#" ><img src="images/6.png" alt="" /></a>
 									Go to IMDB webpage, right click on the page and select Inspect.
 									From this page I want to get the movie name, movie rank and user rating which is present in class <b>lister-item mode-grid</b>.
-									<a href="#" class="image main"><img src="images/7.png" alt="" /></a>
+									<a href="#" ><img src="images/7.png" alt="" /></a>
 									<br>
 									Using html parser we will find all the grids having class name <b>lister-item mode-grid</b>
-									<a href="#" class="image main"><img src="images/8.png" alt="" /></a>
+									<a href="#" ><img src="images/8.png" alt="" /></a>
 									<br>
 									 Now we need to store the extracted values. To store the fetched data we will create 3 empty lists as below,<br> 
-									 <a href="#" class="image main"><img src="images/9.png" alt="" /></a>
+									 <a href="#" ><img src="images/9.png" alt="" /></a>
 									<br>
 									We will fetch all the grid data having movie name, rank and user rating<br>
 									<br><b>Getting the Titles</b><br>
-									<a href="#" class="image main"><img src="images/10.png" alt="" /></a>
+									<a href="#" ><img src="images/10.png" alt="" /></a>
 									<br>
 									<br><b>Getting the Ranks</b><br>
-									<a href="#" class="image main"><img src="images/11.png" alt="" /></a>
+									<a href="#" ><img src="images/11.png" alt="" /></a>
 									<br>
 									<br><b>Getting User Ratings</b><br>
-									<a href="#" class="image main"><img src="images/12.png" alt="" /></a>
+									<a href="#" ><img src="images/12.png" alt="" /></a>
 									<br>
-									<a href="#" class="image main"><img src="images/13.png" alt="" /></a>
+									<a href="#" ><img src="images/13.png" alt="" /></a>
 									<br>
 									we have successfylly fetched data from the page.<br>
 									Now let us beautify the data by arranging in a readable format using dataframe
-									<a href="#" class="image main"><img src="images/14.png" alt="" /></a>
+									<a href="#" ><img src="images/14.png" alt="" /></a>
 									Give header names for each column<br>
-									<a href="#" class="image main"><img src="images/15.png" alt="" /></a>
+									<a href="#" ><img src="images/15.png" alt="" /></a>
 									To see if the data is arranged properly let us print the first 10 rows,<br>
-									<a href="#" class="image main"><img src="images/16.png" alt="" /></a>
+									<a href="#" ><img src="images/16.png" alt="" /></a>
 									if you want to see the whole data then dont include n=10
-									<a href="#" class="image main"><img src="images/17.png" alt="" /></a>
+									<a href="#" ><img src="images/17.png" alt="" /></a>
 									Now we have the data as per our requirement. so let us store the data into <b>csv file</b>
 									
-									<a href="#" class="image main"><img src="images/18.png" alt="" /></a>
+									<a href="#" ><img src="images/18.png" alt="" /></a>
 									
 									And we have data for out analysis!!
 									</p>
