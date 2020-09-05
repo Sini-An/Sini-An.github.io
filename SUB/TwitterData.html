@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>	Twitter - Data extraction and cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1> Twitter<br> </h1><h2>Data Extraction + Formatting</h2>
+						
+						
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<button onclick="goBack()" class="logo" style="font-size:20px;">HOME</button>
+
+						
+						<script>
+						function goBack() {
+ 						 window.history.back();
+							}
+						</script>
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Sep 5, 2020</span>
+									<a href="#" class="image main"><img src="images/tw.jpg" alt="" /></a>
+									<p>Twitter is a popular microblogging platform. It is faster to get latest news and update. Lets see how we can extract data from twitter public accounts.</p>
+								</header>
+								<p><b>Step 1:</b><br>
+									<u>Creating twitter profile, </u><br>
+									If you do not have existing Twitter account then create a new account from twitter page. After successful creation follow the below steps<br>
+									1] Go to <a href="https://apps.twitter.com/" style="color:blue">Twitter App Page</a><br>
+									2] Click on "Create a New App". I already have existing 3 apps created so i will create a new one for this project.<br>
+									<a href="#" ><img src="images/t1.JPG" alt="" width='600' height='300'></a><br>
+									3] Select the reason for creating a App. I am selecting under Hobbyist -> Exploring the API -> Click "Next"<br>
+									<a href="#" ><img src="images/t2.JPG" alt=""  width='600' height='400'></a><br>
+									4] Enter country and name of the app/project. I am naming it as "ExploringCOVID" -> Click "Next"<br>
+									<a href="#" ><img src="images/t4.JPG" alt=""  width='400' height='400'></a><br>
+									5] Answer all the "How will you use the Twitter API or Twitter data?" -> click "Next" -> Click "Submit Application"<br>
+									6] Now Lets create a App. Click on "+ Create App"<br>
+									7] Enter name and you will see the token keys.<br>
+									<a href="#" ><img src="images/t5.JPG" alt=""  width='300' height='400'></a><br>
+									8] Go to Dashboard and now we will generate access token.<br>
+									<a href="#" ><img src="images/t6.JPG" alt=""  width='500' height='300'></a><br>
+									9] Save the access token in a text file or take a screenshot for future use.<br>
+									10] To extract data we need a Tweepy python library. You can install this library by downloading from here <a href="ttps://www.tweepy.org/" style="color:blue">Tweepy</a><br>
+										or use python terminal to install as below<br>
+										<a href="#" ><img src="images/t7.JPG" alt=""  width='500' height='50'></a><br>
+									11] Now we have all the required access and installations. We will use the access tokens to authenticate and to extract required data.<br>
+									12] I am using Jupyter Notebook to write queries. Import the libraries and add API tokens and secret keys. (This can be found under keys and tokens in your twitter app account)<br>
+									<a href="#" ><img src="images/t8.JPG" alt=""  width='600' height='150'></a><br>
+									13] Now we need to pass the created API token for twitter access<br>
+									<a href="#" ><img src="images/t9.JPG" alt=""  width='600' height='70'></a><br>
+									14] Now we are ready and lets pull #COVID tweets from twitter<br>
+									<a href="#" ><img src="images/t10.JPG" alt=""  width='600' height='40'></a><br>
+									15] I will be picking only the text of the tweet. Refer this for <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/api-reference/get-search-tweets" style="color:blue">value defination.</a> <br>
+									<a href="#" ><img src="images/t12.JPG" alt=""  width='600' height='200'></a><br>
+									16] Let's beautify by converting into dataframe.<br>
+									<a href="#" ><img src="images/t13.JPG" alt=""  width='600' height='70'></a><br>
+									<br>
+									Now we have data for further analysis. 
+
+
+									<br>
+									
+								
+									</p>
+							</article>
+
+
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
