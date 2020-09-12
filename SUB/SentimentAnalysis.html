@@ -75,11 +75,11 @@
 									<br>
 									I am considering the data population of first 100 tweets for all the 3 sectors (#COVID, #SushantSinghRajput, #ModiGov) as of 2020-09-09 as below<br>
 									<br><b>#COVID</b>
-									<a href="#" ><img src="images/s1.JPG" alt="" /></a>
+									<a href="#" ><img src="images/s1.JPG" width=800 alt="" /></a>
 									<br><b>#ModiGovernment</b>
-									<a href="#" ><img src="images/s2.JPG" alt="" /></a>
+									<a href="#" ><img src="images/s2.JPG" width=800 alt="" /></a>
 									<br><b>#SushantSinghRajput</b>
-									<a href="#" ><img src="images/s3.JPG" alt="" /></a>
+									<a href="#" ><img src="images/s3.JPG" width=800 alt="" /></a>
 
 									We now have data for analysis. Before that lets see theword cloud for each hashtags which will give us rough idea of what word people are useing the most while tweeting.<br>
 									<br>
@@ -88,10 +88,10 @@
 								<p><b>Step 2:</b><br>
 									<u>Installing VEDAR and import, </u>
 									<br>Using command prompt install VaderSentiment as below. Within a second this installation will be complete.<br>
-									<a href="#" ><img src="images/s4.JPG" alt="" /></a>
+									<a href="#" ><img src="images/s4.JPG" width=800 alt="" /></a>
 									<br>
 									After successful installation, let's import the package. As the analyser name "SentimentIntensityAnalyzer" is big I am renaming it is "sia".<br>
-									<a href="#" ><img src="images/s5.JPG" alt="" /></a><br>
+									<a href="#" ><img src="images/s5.JPG" width=800 alt="" /></a><br>
 								</p>
 								<p><b>Step 3:</b><br>
 									<u>Analysis, </u>
@@ -102,21 +102,21 @@
 									<br><b style="color:red">Negative Sentiment: </b>Compound score <=0.5
 								</p>
 								<p>
-									<a href="#" ><img src="images/s6.JPG" alt="" /></a><br>
+									<a href="#" ><img src="images/s6.JPG" width=800 alt="" /></a><br>
 									Similarly, pass the othe 2 datasets and extract the popularity scores. Below is the top 3 tweets scores for each hashtags.<br>
 									<b>Scores for tweet #COVID</b><br>
-									<a href="#" ><img src="images/s7.JPG" alt="" /></a><br>
+									<a href="#" ><img src="images/s7.JPG" width=800 alt="" /></a><br>
 									<b>Scores for tweet #SushantSinghRajput</b><br>
-									<a href="#" ><img src="images/s8.JPG" alt="" /></a><br>
+									<a href="#" ><img src="images/s8.JPG" width=800 alt="" /></a><br>
 									<b>Score for tweet #ModiGovernment</b><br>
-									<a href="#" ><img src="images/s9.JPG" alt="" /></a><br>
+									<a href="#" ><img src="images/s9.JPG" width=800 alt="" /></a><br>
 									<br>
 									The above gives us each tweet scores but we want to understand what is the overall population sentiment on the 3 hashtags. So lets
 									do a simple average of the 100 tweets to find the overall scores for each hastags.<br>
-									<a href="#" ><img src="images/ssc.jpg" alt="" /></a><br>
+									<a href="#" ><img src="images/ssc.jpg" width=800 alt="" /></a><br>
 									<br>
 									Using Graphical representation we can clearly see the sentiments<br>
-									<a href="#" ><img src="images/gg.jpg" hight=300 width=960 alt="" /></a><br>
+									<a href="#" ><img src="images/gg.jpg"  hight=300 width=960 alt="" /></a><br>
 
 								</p>
 								<P>The compound score which determines exterme positive (+1) and extreme negative (-1). In this case the sentiment shows that 
@@ -127,13 +127,13 @@
 									<b>Approach POS:</b> Part of Speech<br>
 									This is the process of assigning POS to each word. This will help in picking the correct word for sentiment analysis. Example below:
 									<br>
-									<a href="#" ><img src="images/pos.JPG"  alt="" /></a><br>
+									<a href="#" ><img src="images/pos.JPG"  width=800 alt="" /></a><br>
 									<b>Approach NER:</b> Named entity recognisation<br>
 									This extracts the information by identifying the name of places, person, things etc. Example below,<br>
-									<a href="#" ><img src="images/ner.JPG"  alt="" /></a><br>
+									<a href="#" ><img src="images/ner.JPG"  width=800 alt="" /></a><br>
 									<b>Approach CDF:</b> cumulative distribution function<br>
 									This assigns values to data from largest to smallest. Steps includes,<br>
-									<a href="#" ><img src="images/cdx.JPG"  alt="" /></a><br>
+									<a href="#" ><img src="images/cdx.JPG"  width=800 alt="" /></a><br>
 									<br>
 									Everyone has different approachs and finding the correct approach to identify relevent and irrelevant tweets is important. Also, The data size does matters. More data we consider the more accurate will be the result. Hope this gives a rough idea about sentiment analysis and various steps involved.
 
