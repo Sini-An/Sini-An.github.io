@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>	Sentiment Analysis using Valence Aware Dictionary and sEntiment Reasoner : VADER</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Sentiment Analysis <br>VADER</h1>
+						
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<button onclick="goBack()" class="logo" style="font-size:20px;">HOME</button>
+
+						
+						<script>
+						function goBack() {
+ 						 window.history.back();
+							}
+						</script>
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Sep 9, 2020</span>
+									<a href="#" class="image main"><img src="images/sa.jpg" alt="" /></a>
+									<p>Few years ago (to be precise, 2017) when I was working as a Intern at Seek company I was introduced to a beautiful package
+										VEDAR for sentiment analysis project. <a href="https://github.com/cjhutto/vaderSentiment" style="color:blue">VEDAR is is a lexicon and rule-based sentiment analysis tool that is 
+										specifically attuned to sentiments expressed in social media.</a> This package is easy to use and easily understandable. Here, I will show
+										you how to do sentiment analysis on twitter data. </p>
+								</header>
+
+								<p><b>What is Sentiment Analysis?</b><br>
+								As the name suggest sentiment analysis is understanding what people think and what they express in words. 
+								Over the years social media has become the medium of communication and it is easier to collect and analyse more accurately. Various sentiment Analysis tools have 
+								been build to determin series of emotions behind the words. if you are looking for a wider public opinion then Sentiment Analysis is the one. 
+							
+								 </p>
+								<p><b>Step 1:</b><br>
+									<u>Extracting Data, </u><br>
+									The current hot topics in India are COVID, Sushant Singh Rajput, Modi Government. Let's understand what people are more talking about in social media Twitter And
+									whether the sentiment is polarity based (positive, negative or neutral). From my previous blog on "Twitter data extraction" we know how to fetch data. So i will directly jump to sentiment analysis.
+									<br>
+									I am considering the data population of first 100 tweets for all the 3 sectors (#COVID, #SushantSinghRajput, #ModiGov) as of 2020-09-09 as below<br>
+									<br><b>#COVID</b>
+									<a href="#" ><img src="images/s1.JPG" alt="" /></a>
+									<br><b>#ModiGovernment</b>
+									<a href="#" ><img src="images/s2.JPG" alt="" /></a>
+									<br><b>#SushantSinghRajput</b>
+									<a href="#" ><img src="images/s3.JPG" alt="" /></a>
+
+									We now have data for analysis. Before that lets see theword cloud for each hashtags which will give us rough idea of what word people are useing the most while tweeting.<br>
+									<a href="#" ><img src="images/wc.JPG" width=900 hight=400 alt="" /></a>
+								</p>
+								<p><b>Step 2:</b><br>
+									<u>Installing VEDAR and import, </u>
+									<br>Using command prompt install VaderSentiment as below. Within a second this installation will be complete.<br>
+									<a href="#" ><img src="images/s4.JPG" alt="" /></a>
+									<br>
+									After successful installation, let's import the package. As the analyser name "SentimentIntensityAnalyzer" is big I am renaming it is "sia".<br>
+									<a href="#" ><img src="images/s5.JPG" alt="" /></a><br>
+								</p>
+								<p><b>Step 3:</b><br>
+									<u>Analysis, </u>
+									<br>Vader sentiment method returns the values to represent the amount of negative, positive and neutral sentiment and also works out the compound
+									sentiment value to indicate overall sentiment popularity.
+									<br><b style="color:green">Positve Sentiment: </b>Compound score  >=0.5
+									<br><b style="color:rgb(13, 13, 211)">Neutral Sentiment: </b>Compound score >0.5 and compound score <0.5
+									<br><b style="color:red">Negative Sentiment: </b>Compound score <=0.5
+								</p>
+								<p>
+									<a href="#" ><img src="images/s6.JPG" alt="" /></a><br>
+									Similarly, pass the othe 2 datasets and extract the popularity scores. Below is the top 3 tweets scores for each hashtags.<br>
+									<b>Scores for tweet #COVID</b><br>
+									<a href="#" ><img src="images/s7.JPG" alt="" /></a><br>
+									<b>Scores for tweet #SushantSinghRajput</b><br>
+									<a href="#" ><img src="images/s8.JPG" alt="" /></a><br>
+									<b>Score for tweet #ModiGovernment</b><br>
+									<a href="#" ><img src="images/s9.JPG" alt="" /></a><br>
+									<br>
+									The above gives us each tweet scores but we want to understand what is the overall population sentiment on the 3 hashtags. So lets
+									do a simple average of the 100 tweets to find the overall scores for each hastags.<br>
+									<a href="#" ><img src="images/ssc.jpg" alt="" /></a><br>
+									<br>
+									Using Graphical representation we can clearly see the sentiments<br>
+									<a href="#" ><img src="images/gg.jpg" hight=300 width=960 alt="" /></a><br>
+
+								</p>
+								<P>The compound score which determines exterme positive (+1) and extreme negative (-1). In this case the sentiment shows that 
+									people are taking more negatively about Modi government and about Covid where as sentiments regarding sushant singh rajput remains more of positive.
+									We can clearly see that this analysis need more beautifying of the data for correct results.
+									<br><br>
+									Different approaches acan be used for better results such as,<br>
+									<b>Approach POS:</b> Part of Speech<br>
+									This is the process of assigning POS to each word. This will help in picking the correct word for sentiment analysis. Example below:
+									<br>
+									<a href="#" ><img src="images/pos.JPG"  alt="" /></a><br>
+									<b>Approach NER:</b> Named entity recognisation<br>
+									This extracts the information by identifying the name of places, person, things etc. Example below,<br>
+									<a href="#" ><img src="images/ner.JPG"  alt="" /></a><br>
+									<b>Approach CDF:</b> cumulative distribution function<br>
+									This assigns values to data from largest to smallest. Steps includes,<br>
+									<a href="#" ><img src="images/cdx.JPG"  alt="" /></a><br>
+									<br>
+									Everyone has different approachs and finding the correct approach to identify relevent and irrelevant tweets is important. Also, The data size does matters. More data we consider the more accurate will be the result. Hope this gives a rough idea about sentiment analysis and various steps involved.
+
+								
+
+								</P>
+							</article>
+
+
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

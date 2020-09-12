@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>	Face Recognisation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Data Extraction <br>Twitter</h1>
+						
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<button onclick="goBack()" class="logo" style="font-size:20px;">HOME</button>
+
+						
+						<script>
+						function goBack() {
+ 						 window.history.back();
+							}
+						</script>
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Sep 9, 2020</span>
+									<a href="#" class="image main"><img src="images/tw.jpg" alt="" /></a>
+									<p>Twitter is a popular microblogging platform. It is faster to get latest news and update. Lets see how we can extract data from twitter public accounts.</p>
+								</header>
+								<p><b>Step 1:</b><br>
+									<u>Creating twitter profile, </u><br>
+									We need real data to understand what maximum population are thinking about GOT and i believe Twitter is one among many social media where people are free to express their views. Mainly, it is easier to extract data from twitter public account!!. I have already extracted data from Twitter, below is how the clean data looks like. (How to extract twitter data?)<br>
+									<a href="#" ><img src="images/1.jpg" alt="" /></a>
+									After executing the command you will get a successfully installed message.</p>
+								<p><b>Step 2:</b><br>
+									Open Anaconda Jupyter Notebook and create a new project(Example-:Project Name:IMDB)<br>
+									If you are new to Jupyter Notebook and you have installed Anaconda previously in your system than these are the simple steps to open a Notebook.<br>
+									<a href="#" ><img src="images/2.jpg" alt="" /></a><br>
+									Once you execute the command you will see that the kernels gets activated and you will find the following description in the output<br>
+									<a href="#" ><img src="images/3.jpg" alt="" /></a><br>
+									Copy and paste the URL in your browser.
+									Include the following statement into code cell
+									<br>
+									Here, bs4 is beautifulSoup4 which is used for pulling HTML and XML files which contains data.<br>
+									Now let's import libraries<br>
+									<a href="#" ><img src="images/4.jpg" alt="" /></a>		<br>							
+									Select a webpage from where you want to pull the data. Take any open source webpage. I am using imdb webpage.<br>									
+									<a href="#" ><img src="images/5.jpg" alt="" /></a>	<br>				
+									Store the web response in parser_html. This is a python library use to parse in a linear or nested structure.<br>
+									<a href="#" ><img src="images/6.jpg" alt="" /></a><br>
+									Go to IMDB webpage, right click on the page and select Inspect.
+									From this page I want to get the movie name, movie rank and user rating which is present in class <b>lister-item mode-grid</b>.
+									<a href="#" ><img src="images/7.jpg" alt="" /></a><br>
+									<br>
+									Using html parser we will find all the grids having class name <b>lister-item mode-grid</b>
+									<a href="#" ><img src="images/8.jpg" alt="" /></a><br>
+									<br>
+									 Now we need to store the extracted values. To store the fetched data we will create 3 empty lists as below,<br> 
+									 <a href="#" ><img src="images/9.jpg" alt="" /></a><br>
+									<br>
+									We will fetch all the grid data having movie name, rank and user rating<br>
+									<br><b>Getting the Titles</b><br>
+									<a href="#" ><img src="images/10.jpg" alt="" /></a><br>
+									<br>
+									<br><b>Getting the Ranks</b><br>
+									<a href="#" ><img src="images/11.jpg" alt="" /></a><br>
+									<br>
+									<br><b>Getting User Ratings</b><br>
+									<a href="#" ><img src="images/12.jpg" alt="" /></a><br>
+									<br>
+									<a href="#" ><img src="images/13.jpg" alt="" /></a><br>
+									<br>
+									we have successfylly fetched data from the page.<br>
+									Now let us beautify the data by arranging in a readable format using dataframe
+									<a href="#" ><img src="images/14.jpg" alt="" /></a><br>
+									Give header names for each column<br>
+									<a href="#" ><img src="images/15.jpg" alt="" /></a><br>
+									To see if the data is arranged properly let us print the first 10 rows,<br>
+									<a href="#" ><img src="images/16.jpg" alt="" /></a><br>
+									if you want to see the whole data then dont include n=10
+									<a href="#" ><img src="images/17.jpg" alt="" /></a><br>
+									Now we have the data as per our requirement. so let us store the data into <b>csv file</b>
+									
+									<a href="#" ><img src="images/18.jpg" alt="" /></a><br>
+									
+									And we have data for out analysis!!
+									</p>
+							</article>
+
+
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
