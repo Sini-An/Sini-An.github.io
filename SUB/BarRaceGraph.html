@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>	Global Terrorism analysis using Bar Race Graph</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Terrorism: BRG</h1>
+						
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<button onclick="goBack()" class="logo" style="font-size:20px;">HOME</button>
+
+						
+						<script>
+						function goBack() {
+ 						 window.history.back();
+							}
+						</script>
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Sep 18, 2020</span>
+									<a href="#" class="image main"><img src="images/terrorism.jpg" alt="" /></a>
+									<p>Terrorism, a word that has been exploding up all over the news in the past decade. Many countries are affect and can see the rise in terrorism in this century.
+									</p>
+								</header>
+								<p>
+								Here we will see how we can use bar race graph for analysing the growth of terrorism in different countries from 1970.
+								<br>
+								<br>
+								<b>What is bar race graph?</b><br>
+								We have seen static bar graphs earlier which can be created using Metplotlib or others. Bar race graph is a open source library for creating animated bar graphs which are widely popular in social media nowadays.
+								<br><br>
+								Let's get started :) 
+								<p>Step 1:<br>
+								Installing bar race graph package.<br>
+								<a href="#"><img src="images/brg1.JPG" alt="" /></a>
+								<br>
+								I am using data from Golbal Terrorism Database <a href="https://start.umd.edu/gtd/" style="color:blue">"https://start.umd.edu/gtd/"</a>. This data includes systematic data on domestic as well as international terrorist incidents that have occurred during 1970-2017 which includes more than 180,000 attacks.
+								<br>
+								There are 135 columns in this dataset. I will be grouping the date and country to get the number of attacks each year for different countries.
+								<br>
+								<a href="#"><img src="images/ter1.JPG" alt="" /></a><br>
+								After grouping the data looks like This<br>
+								<a href="#"><img src="images/ter2.JPG" alt="" /></a><br>
+								We are all set to use the bar race graph function. This is as easy as drawing a bar graph in the excel sheet.<br>
+								<a href="#"><img src="images/ter3.JPG" alt="" /></a><br>
+
+								Now we have the final graph which is beautiful and fun to look at. I have saved the below graph in a .mp4 format. Play the video and you can easily analyse changes occured during these years.<br>
+									<video width="950" height="650" controls>
+										<source src="images/video.mp4" type="video/mp4">
+									</video>
+									
+								<br>
+								<br>
+								<br>
+								Start from year 1970, terrorism was high compared to other countries in United states and hardly other countries had terror activities.<br>
+								The spike in terrorism started from 2000, This is when the ISIS was formed. The first major spike can be seen in Iraq.<br>
+								Overall, Iraq, Afghanistan, India and Pakistan have high terror attacks globally.
+								
+
+								</P>
+							</article>
+
+
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
